@@ -5,10 +5,16 @@ body {
   align-items: center;
 }
 
+#calculator {
+  margin-top: 60px;
+  padding: 50px 30px;
+  border: solid 8px rgb(97, 71, 53);
+}
+
 h1 {
   font-weight: 900;
   font-size: 50px;
-  padding-top: 20px;
+  margin: 0;
 }
 
 #calculatorBody {
@@ -27,7 +33,7 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 50px;
-  width: 200px;
+  width: 256px;
 }
 
 .buttons {
@@ -42,11 +48,50 @@ h1 {
   box-sizing: border-box;
   height: 50px;
   width: 50px;
-  background-color: white;
-  border: solid 2px rgb(123, 168, 158);
   font-size: 15px;
+}
+
+.buttons .number {
+  background-color: rgb(229, 248, 229);
+  border: solid 2px rgb(57, 118, 55);
   color: rgb(57, 118, 55);
 }
+
+.buttons .operator {
+  background-color: rgb(222, 240, 245);
+  border: solid 2px rgb(125, 183, 241);
+  color: rgb(125, 183, 241);
+}
+
+.buttons .misc {
+  background-color: rgb(248, 226, 255);
+  border: solid 2px rgb(139, 93, 148);
+  color: rgb(139, 93, 148);
+}
+
+.buttons button:hover {
+  background-color: rgb(57, 118, 55);
+  color: rgb(204, 241, 202);
+}
+
+.buttons .operator:hover {
+  background-color: rgb(125, 183, 241);
+  color: rgb(222, 240, 245);
+}
+
+.buttons .misc:hover {
+  background-color: rgb(139, 93, 148);
+  color: rgb(248, 226, 255);
+}
+
+.buttons .number:active,
+.buttons .operator:active,
+.buttons .misc:active {
+  background-color: white;
+  border: solid 2px rgb(0, 0, 0);
+  color: rgb(32, 67, 31);
+}
+
 
 .buttons button.double {
   box-sizing: border-box;
